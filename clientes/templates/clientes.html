@@ -18,40 +18,40 @@
 
         </div>
 
-        <div class="adicionar-cliente">
-            <form action="{% url "row">
-                    <div class="col-md">
-                        <p>Nome:</p>
-                        <input type="text" class="form-control" placeholder="Primeiro nome">
+            <div class="adicionar-cliente">
+                <form action="{% url "row">
+                        <div class="col-md">
+                            <p>Nome:</p>
+                            <input type="text" class="form-control" placeholder="Primeiro nome">
+                        </div>
+                        <div class="col-md">
+                            <p>Sobrenome:</p>
+                            <input type="text" class="form-control" placeholder="Sobrenome">
+                        </div>
                     </div>
-                    <div class="col-md">
-                        <p>Sobrenome:</p>
-                        <input type="text" class="form-control" placeholder="Sobrenome">
+                    <br>
+                    <p>E-mail:</p>
+                    <input type="email" class="form-control" placeholder="nome@email.com" name="email">
+                    <br>
+                    <p>CPF:</p>
+                    <input type="text" class="form-control" placeholder="___.___.___-__" name="cpf">
+                    <hr style="background-color:gray;">
+                    <div class="add-tratamentos">
+                        <h3>Tratamentos</h3>
+                        <span class="btn-add-tratamentos" onclick="add_tratamento()">+ Adicionar um tratamento</span>
+        
+                        <div id="form-tratamento">
+        
+                        </div>
+        
                     </div>
-                </div>
-                <br>
-                <p>E-mail:</p>
-                <input type="email" class="form-control" placeholder="nome@email.com" name="email">
-                <br>
-                <p>CPF:</p>
-                <input type="text" class="form-control" placeholder="___.___.___-__" name="cpf">
-                <hr style="background-color:gray;">
-                <div class="add-tratamentos">
-                    <h3>Tratamentos</h3>
-                    <span class="btn-add-tratamentos" onclick="add_tratamento()">+ Adicionar um tratamento</span>
-      
-                    <div id="form-tratamento">
-      
-                    </div>
-      
-                </div>
-      
-                <br>
-                <input type="submit" value="Cadastrar" class="btn-principal">
-      
-            </form>
-            
-        </div>
+        
+                    <br>
+                    <input type="submit" value="Cadastrar" class="btn-principal">
+        
+                </form>
+                
+            </div>
 
-    </div>
-{% endblock %}
+        </div>
+    {% endblock %}
