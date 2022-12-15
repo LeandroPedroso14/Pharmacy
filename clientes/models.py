@@ -12,10 +12,14 @@ class Cliente(models.Model):
 class Tratamento(models.Model):
     tratamento = models.CharField(max_length=50)
     peso = models.CharField(max_length=50)
-    idade = models.IntegereField()
+    idade = models.IntegerField()
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
     medicamentos = models.IntegerField(default=0)
     consulta = models.IntegerField(default=0)
     
-    
+
+def __str__(self) -> str:
+    return self.tratamento
+
+
 
