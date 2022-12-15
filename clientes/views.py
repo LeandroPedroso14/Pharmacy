@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Cliente, Tratamento
+import re
 
 def clientes(request):
     if request.method == "GET":
@@ -14,12 +15,14 @@ def clientes(request):
         triagens =request.POST.getlist('triagem')
         idades =request.POST.getlist('idade')
 
-        Cliente = cliente.objects.filter(cpf=cpf)
+        cliente = Cliente.objects.filter(cpf=cpf)
 
         if cliente.exists():
             return HttpResponse('Cliente já existe')
 
-        cliente = Cliente(
+        if not re.fullmatch(re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'), email):
+         return HttpResponse('Email inválido')
+         cliente = Cliente(
            nome =  nome,
            sobrenome = sobrenome,
            email = email,
