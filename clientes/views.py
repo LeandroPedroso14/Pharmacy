@@ -18,11 +18,11 @@ def clientes(request):
         cliente = Cliente.objects.filter(cpf=cpf)
 
         if cliente.exists():
-            return HttpResponse('Cliente já existe')
+            return render(request, 'clientes.html', {'nome': nome, 'sobrenome':sobrenome, 'email': email})
 
         if not re.fullmatch(re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'), email):
-         return HttpResponse('Email inválido')
-         cliente = Cliente(
+           return render(request, 'clientes.html', {'nome': nome, 'sobrenome':sobrenome, 'cpf': cpf})
+           cliente = Cliente(
            nome =  nome,
            sobrenome = sobrenome,
            email = email,
