@@ -41,7 +41,23 @@
                         <span class="btn-add-tratamentos" onclick="add_tratamento()">+ Adicionar um tratamento</span>
         
                         <div id="form-tratamento">
-        
+                             {% for tratamento, triagem, idade in tratamentos%}
+                                      <br>
+                                       {{tratamento}} {{triagem}} {{idade}}
+                                       <div class="row">
+                                             <div class="col-md">
+                                                <input type='text' placeholder='tratamento' class='form-control' name='tratamento' value="{{tratamento}}">
+                                             </div>
+
+                                             <div class="col-md">
+                                                <input type='text' placeholder='Triagem' class='form-control' name='Triagem' value="{{triagem}}">
+                                            </div>
+
+                                            <div class="col-md">
+                                                <input type='number' placeholder='idade' class='form-control' name='idade' value="{{idade}}">
+                                            </div>
+                                       </div>
+                             {% endfor%}
                         </div>
         
                     </div>
