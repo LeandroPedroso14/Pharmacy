@@ -14,6 +14,11 @@ def clientes(request):
         triagens =request.POST.getlist('triagem')
         idades =request.POST.getlist('idade')
 
+        Cliente = cliente.objects.filter(cpf=cpf)
+
+        if cliente.exists():
+            return HttpResponse('Cliente já existe')
+
         cliente = Cliente(
            nome =  nome,
            sobrenome = sobrenome,
