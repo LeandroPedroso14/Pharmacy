@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Cliente, Tratamento
 
 def clientes(request):
     if request.method == "GET":
@@ -12,6 +13,15 @@ def clientes(request):
         tratamentos =request.POST.getlist('tratamento')
         triagens =request.POST.getlist('triagem')
         idades =request.POST.getlist('idade')
+
+        cliente = Cliente(
+           nome =  nome,
+           sobrenome = sobrenome,
+           email = email,
+           cpf = cpf,
+        )
+
+        cliente.save()
 
 
         return HttpResponse('teste')
