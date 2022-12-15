@@ -23,5 +23,9 @@ def clientes(request):
 
         cliente.save()
 
+        for tratamento, triagem, idade in zip(tratamentos, triagens, idades):
+            tratar = tratamento(tratamento=tratamento, triagem=triagem, idade=idade, cliente=cliente)
+            tratar.save()
+
 
         return HttpResponse('teste')
