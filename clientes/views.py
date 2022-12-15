@@ -9,5 +9,9 @@ def clientes(request):
         sobrenome = request.POST.get('sobrenome')
         email = request.POST.get('email')
         cpf = request.POST.get('cpf')
+        tratamentos =request.POST.getlist('tratamento')
+        triagens =request.POST.getlist('triagem')
+        idades =request.POST.getlist('idade')
 
 
+        return HttpResponse('teste')
