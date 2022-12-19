@@ -10,3 +10,6 @@ System information
 
 - Interface with sidebar
 - Registration form
+
+<h3>Options</h3>
+
