@@ -13,3 +13,12 @@ System information
 
 <h3>Options</h3>
 
+- Home page
+- Customers
+- Services
+- Schedule
+- Historic
+- Add customers
+- Update clients
+- Add a treatment
+
