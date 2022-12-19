@@ -37,9 +37,9 @@ Interface image
 <br>
 <br>
 
-<h4 align="center"> 
+<h2 align="center"> 
 	 Project under development 🛠️
-</h4>
+</h2>
 
 <br>
 <br>
