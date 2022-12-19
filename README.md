@@ -22,3 +22,7 @@ System information
 - Update clients
 - Add a treatment
 
+<h2 align="center">
+Interface image
+</h2>
+
