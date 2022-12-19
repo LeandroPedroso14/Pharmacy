@@ -38,7 +38,7 @@ Interface image
 <br>
 
 <h2 align="center"> 
-	 Project under development 🛠️
+	🚧 Project under development 🚧
 </h2>
 
 <br>
