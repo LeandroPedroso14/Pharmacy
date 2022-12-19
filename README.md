@@ -34,3 +34,13 @@ Interface image
 
 [![Meu linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/leandro-pedroso14_python-django-developer-activity-7009205103064678400-0KPx?utm_source=share&utm_medium=member_desktop)
 
+<br>
+<br>
+
+<h4 align="center"> 
+	 Project under development 🛠️
+</h4>
+
+<br>
+<br>
+
