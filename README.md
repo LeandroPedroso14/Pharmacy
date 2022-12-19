@@ -26,3 +26,7 @@ System information
 Interface image
 </h2>
 
+<h1 align="center">
+<img src= "Image_readme/interface_pharm.png" width="950" height="550" />
+</h1>
+
