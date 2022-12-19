@@ -48,7 +48,21 @@ Features:
 
 - [x]  Create virtual environment.
 - [x]  CSS.
+- [x]  Bootstrap
 - [x]  HTML.
 - [x]  Java Script
 - [ ]  Configure registration.
 
+<h2 align="center">
+ 🛠 Technologies
+</h2>
+
+Tools used to create the system:
+
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [HTML5](https://html.spec.whatwg.org/)
+- [CSS3](https://www.w3.org/TR/css3-roadmap/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Javascript](https://www.javascript.com/)
+- [VS CODE](https://code.visualstudio.com/)
