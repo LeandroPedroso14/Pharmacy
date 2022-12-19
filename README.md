@@ -8,3 +8,5 @@
 System information
 </h2>
 
+- Interface with sidebar
+- Registration form
