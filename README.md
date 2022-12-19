@@ -44,3 +44,11 @@ Interface image
 <br>
 <br>
 
+Features:
+
+- [x]  Create virtual environment.
+- [x]  CSS.
+- [x]  HTML.
+- [x]  Java Script
+- [ ]  Configure registration.
+
